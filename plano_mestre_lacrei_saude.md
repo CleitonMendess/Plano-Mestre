@@ -139,3 +139,122 @@ O `README.md` será o guia principal do projeto e deverá conter:
 
 * **Integração Asaas (Proposta):** Documentar no README ou criar um módulo mockado (`payments/`) demonstrando a arquitetura de split de pagamento (ex: Webhooks para recebimento de confirmação de pagamento de consultas).
 * **Documentação Viva:** Implementar `drf-spectacular` ou `drf-yasg` para gerar uma interface Swagger/Redoc acessível via `/api/docs/`.
+
+---
+
+## 9. CRONOGRAMA DE EXECUÇÃO (5 DIAS ÚTEIS)
+
+O planejamento foi dividido em etapas incrementais para garantir a entrega de todos os requisitos obrigatórios dentro do prazo estabelecido.
+
+### Dia 1 — Estrutura Inicial e Ambiente
+
+#### Objetivos
+
+* Configuração do repositório GitHub
+* Criação do projeto Django
+* Configuração do Poetry
+* Configuração do PostgreSQL
+* Configuração do Docker e Docker Compose
+* Criação da estrutura base do projeto
+
+#### Entregáveis
+
+* Projeto inicial funcionando
+* Banco PostgreSQL conectado
+* Containers Docker funcionando
+* Primeiro commit estruturado
+
+---
+
+### Dia 2 — Desenvolvimento dos CRUDs
+
+#### Objetivos
+
+* Implementação da entidade Professional
+* Implementação da entidade Appointment
+* Criação dos serializers
+* Criação dos ViewSets
+* Configuração das rotas REST
+* Implementação da busca de consultas por profissional
+
+#### Entregáveis
+
+* CRUD completo de profissionais
+* CRUD completo de consultas
+* Filtro por profissional funcionando
+
+---
+
+### Dia 3 — Segurança e Qualidade
+
+#### Objetivos
+
+* Implementação de autenticação JWT
+* Configuração de permissões
+* Configuração de CORS
+* Validações de entrada
+* Sanitização dos dados
+* Configuração de logs de acesso e erros
+
+#### Entregáveis
+
+* API protegida por autenticação
+* Validações implementadas
+* Logs configurados
+* Requisitos de segurança atendidos
+
+---
+
+### Dia 4 — Testes Automatizados e Documentação da API
+
+#### Objetivos
+
+* Implementação dos testes APITestCase
+* Testes de CRUD de profissionais
+* Testes de CRUD de consultas
+* Testes de cenários de erro
+* Configuração do Swagger (drf-spectacular)
+
+#### Entregáveis
+
+* Suíte de testes funcionando
+* Cobertura dos cenários obrigatórios
+* Documentação Swagger disponível
+
+---
+
+### Dia 5 — CI/CD, Deploy e Documentação Final
+
+#### Objetivos
+
+* Configuração do GitHub Actions
+* Pipeline de Lint
+* Pipeline de Testes
+* Build da imagem Docker
+* Deploy para ambiente Staging
+* Deploy para ambiente Produção
+* Finalização do README
+* Revisão geral do projeto
+
+#### Entregáveis
+
+* Pipeline CI/CD funcional
+* Deploy realizado
+* README completo
+* Projeto pronto para entrega
+
+---
+
+### Buffer de Risco
+
+Caso alguma etapa atrase, a prioridade de entrega será:
+
+1. CRUDs completos
+2. Segurança (JWT, CORS, validações)
+3. Docker + PostgreSQL
+4. Testes automatizados
+5. GitHub Actions
+6. Deploy AWS
+7. Swagger e itens bônus
+
+Dessa forma, os requisitos obrigatórios permanecem garantidos mesmo diante de imprevistos durante o desenvolvimento.
